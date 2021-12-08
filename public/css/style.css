@@ -1,0 +1,47 @@
+h1 {
+    margin: 32px;
+    margin-left: 0px;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: underline;
+    margin-top: 32px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: rgb(24, 22, 22);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 1rem;
+}
+
+.footer-menu li {
+    padding: 3px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: brown;
+}
