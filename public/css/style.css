@@ -35,10 +35,9 @@ footer {
     background-color: rgb(24, 22, 22);
     padding: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: brown;
-    min-height: 50px;
     margin-top: auto;
 }
 
