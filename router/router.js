@@ -5,7 +5,7 @@ const mysql = require('mysql');
 //conexion a la base de datos
 const conexion = mysql.createConnection({
     host: 'localhost',
-    database: 'db_pizzeria',
+    database: 'db_pizzeria', //database: 'agustin_ignacio_sau',
     user: 'root',
     password: ''
 });
@@ -31,6 +31,7 @@ router.get('/clientes', (req, res) => {
             res.render('clientes', {
                 results,
                 titulo: "Clientes",
+                subtitulo: "Lista De Clientes",
             })
         }
     })

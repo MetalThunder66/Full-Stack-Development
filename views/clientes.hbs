@@ -10,15 +10,17 @@
     {{> header}}
 
     <div class="container">
-        <h1>{{titulo}}</h1>
+        <h1>{{subtitulo}}</h1>
     </div>
 
     {{!-- Tabla Clientes --}}
     <section class="container">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#myModalAdd">Añadir</button>
-
+        
+        <div class="btn-agregar-cli">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModalAdd">Añadir</button>
+        </div>
+        
         <table class="table table-secondary table-striped table-hover" id="mytable">
             <thead>
                 <tr>
@@ -36,7 +38,7 @@
                     <td>{{apellido}}</td>
                     <td>{{email}}</td>
                     <td>
-                        <a class="btn btn-primary edit" href="javascript:void(0);" data-cliente_id="{{id}}" 
+                        <a class="btn btn-dark edit" href="javascript:void(0);" data-cliente_id="{{id}}" 
                             data-nombre="{{nombre}}" data-apellido="{{apellido}}" data-email="{{email}}">Editar</a>
                         <a class="btn btn-danger delete" href="javascript:void(0);" data-id="{{id}}">Eliminar</a>
                     </td>
@@ -72,7 +74,7 @@
                     <div class="modal-footer">
                         <input type="hidden" name="id" class="cliente_id">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="submit" class="btn btn-dark">Guardar</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +108,7 @@
                     <div class="modal-footer">
                         <input type="hidden" name="id" class="cliente_id">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                        <button type="submit" class="btn btn-dark">Actualizar</button>
                     </div>
                 </div>
             </div>

@@ -8,18 +8,20 @@
 <body>
     {{!-- Header/ Responsive Nav Bar --}}
     {{> header}}
+    <article>
+        <section class="container">
+            <h2 class="contacto">Su mensaje ha sido enviado.</h2>
+            <h3 class="contacto">{{subtitulo}}</h3>
+        </section>
 
-    <div class="container">
-        <h1>{{titulo}}</h1>
-    </div>
+        <div class="container">
+            <a href="contacto"><button type="button" class="btn btn-dark contacto">Volver</button></a>
+        </div>
+    </article>
 
-    <section class="container">
-        <h3>Su mensaje se ha enviado</h3>
-    </section>
+    {{!-- Footer --}}
+    {{> footer}}
 
-    <div class="container">
-        <a href="contacto"><button type="button" class="btn btn-primary" >Volver</button></a>
-    </div>
 </body>
 
 </html>

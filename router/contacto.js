@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 contacto.get('/contacto', (req, res) => {
     res.render('contacto', {
         titulo: "Contacto",
+        subtitulo: "Contáctese con nosotros",
     })
 });
 
@@ -39,7 +40,10 @@ contacto.post('/send-email', (req, res) => {
         if (error) {
             res.status(500).send(error.message);
         } else {
-            res.render('emailEnviado');
+            res.render('emailEnviado', {
+                titulo: "Contacto",
+                subtitulo: "Gracias por contactarse con nosotros.",
+            });
             res.status(200).jsonp(reqbody);
         }
     })
