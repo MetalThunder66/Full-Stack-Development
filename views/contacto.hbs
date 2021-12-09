@@ -15,27 +15,29 @@
 
     <section class="container">
         <form action="/send-email" method="POST">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email"
-                    placeholder="Tu email">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                <label for="floatingInput">Email address</label>
             </div>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre">
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                <label for="nombre">Nombre</label>
             </div>
-            <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Tu apellido">
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                <label for="apellido">Apellido</label>
             </div>
-            <div class="mb-3">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Escribe un asunto">
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto">
+                <label for="nombre">Asunto</label>
             </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
-                    placeholder="Escribe tu mensaje"></textarea>
+
+            <div class="form-floating">
+                <textarea class="form-control mb-3" placeholder="Tu comentario" id="mensaje" style="height: 100px" name="mensaje"></textarea>
+                <label for="mensaje">Tu Mensaje</label>
             </div>
 
             <button type="submit" class="btn btn-dark">Enviar</button>
@@ -44,6 +46,7 @@
 
     {{!-- Footer --}}
     {{> footer}}
-    
+
 </body>
+
 </html>
