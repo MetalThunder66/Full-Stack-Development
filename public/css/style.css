@@ -54,3 +54,34 @@ footer {
     text-decoration: none;
     color: brown;
 }
+
+
+/* acordeon nosotros */
+
+.accordion {
+    border-color: rgb(24, 22, 22);
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(255, 35, 35);
+    background-color: rgb(49, 44, 44);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button {
+    border-radius: 2px;
+}
+
+.accordion-body {
+    background-color: rgba(226, 223, 209, 0.753);
+}
+
+.tarjeta-box {
+    display: grid;
+    grid-template-areas: "card-1 card-2 card-3";
+    justify-items: center;
+}

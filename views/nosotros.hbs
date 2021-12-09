@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> head}}
+</head>
+
+<body>
+    {{!-- Header/ Responsive Nav Bar --}}
+    {{> header}}
+
+    <section class="container mb-3">
+        <div>
+            <h1>{{subtitulo}}</h1>
+        </div>
+
+        <div class="accordion accordion-flush" id="contenido-acordeon">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="contenido-acordeon-1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Quiénes somos?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#contenido-acordeon">
+                    <div class="accordion-body">Somos una tienda de comida que ofrece lo mejor relacionado a Pizzas y
+                        Empanadas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="contenido-acordeon-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Donde nos encontramos?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#contenido-acordeon">
+                    <div class="accordion-body">No contamos con un lugar fisico ya que nuestro servicio es pura y
+                        exclusivamente Online.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="contenido-acordeon-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ¿Como me puedo contactar con ustedes?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#contenido-acordeon">
+                    <div class="accordion-body">Puedes enviarnos un mail en la seccion de contacto clickeando <a
+                            href="contacto">Aqui</a>
+                        o bien comunicarte mediante alguna de las redes sociales disponibles.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container tarjeta-box mb-3">
+        <div class="card card-1 mb-3" style="width: 18rem;">
+            <img src="assets/images/pedido.jpg" class="card-img-top" alt="un repartidor entregando su pedido">
+            <div class="card-body">
+                <p class="card-text">Contamos con el mejor servicio de entrega inmediata.</p>
+            </div>
+        </div>
+        <div class="card card-2 mb-3" style="width: 18rem;">
+            <img src="assets/images/chef.jpg" class="card-img-top" alt="un chef">
+            <div class="card-body">
+                <p class="card-text">Tenemos los cocineros mas especializados que puede uno conseguir.</p>
+            </div>
+        </div>
+        <div class="card card-3 mb-3" style="width: 18rem;">
+            <img src="assets/images/precio.png" class="card-img-top" alt="una etiqueta de precio">
+            <div class="card-body">
+                <p class="card-text">Precios accesibles para todo nuestro menu!</p>
+            </div>
+        </div>
+    </section>
+
+    {{!-- Footer --}}
+    {{> footer}}
+
+</body>
+
+</html>

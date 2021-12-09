@@ -82,6 +82,13 @@ router.get('/', (req, res) => {
     })
 });
 
+router.get('/nosotros', (req, res) => {
+    res.render('nosotros', {
+        titulo: "Nosotros",
+        subtitulo: "Sobre Nosotros",
+    })
+});
+
 router.get('*', (req, res) => {
     res.send('Error pagina no encontrada')
 });
