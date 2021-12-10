@@ -16,27 +16,27 @@
     <section class="container">
         <form action="/send-email" method="POST">
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
                 <label for="floatingInput">Email address</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
                 <label for="nombre">Nombre</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
                 <label for="apellido">Apellido</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto">
+                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto" required>
                 <label for="nombre">Asunto</label>
             </div>
 
             <div class="form-floating">
-                <textarea class="form-control mb-3" placeholder="Tu comentario" id="mensaje" style="height: 100px" name="mensaje"></textarea>
+                <textarea class="form-control mb-3" placeholder="Tu comentario" id="mensaje" style="height: 100px" name="mensaje" required></textarea>
                 <label for="mensaje">Tu Mensaje</label>
             </div>
 

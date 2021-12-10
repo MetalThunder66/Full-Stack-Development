@@ -1,4 +1,4 @@
-//Mostrar datos al modal para editar y borrar registro
+//Mostrar datos al modal para editar y borrar clientes
 $(document).ready(function() {
     $('#mytable').on('click', '.edit', function() {
         let c_id = $(this).data('cliente_id');
