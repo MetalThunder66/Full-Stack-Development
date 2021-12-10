@@ -29,11 +29,13 @@ contacto.post('/send-email', (req, res) => {
 
     //info para construir el objeto
     let mailOptions = {
-        to: 'cosmefulanito@gmail.com',
-        from: 'Remitente',
+        to: 'aliya.steuber50@ethereal.email',
+        from: email,
         subject: `${asunto}`,
-        html: `<h1> Mensaje de ${nombre} ${apellido} para Pizzeria: ${mensaje}.
-            Contacto: ${email} </h1>`,
+        html: `<h1> Mensaje para Pizzeria: </h1>
+                <h2>De ${nombre} ${apellido}</h2>
+                <p> Mensaje: ${mensaje} </p>
+                <p> Contacto: ${email}  </p>`,
     }
 
     transporter.sendMail(mailOptions, (error, info) => {
