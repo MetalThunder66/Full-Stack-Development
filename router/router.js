@@ -5,7 +5,7 @@ const mysql = require('mysql');
 //conexion a la base de datos
 const conexion = mysql.createConnection({
     host: 'localhost',
-    database: 'db_pizzeria', //database: 'agustin_ignacio_sau',
+    database: 'agustin_ignacio_sau', //Linea Original: database: 'db_pizzeria' database: 'agustin_ignacio_sau',
     user: 'root',
     password: ''
 });
